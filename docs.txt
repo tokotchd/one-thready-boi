@@ -1,0 +1,73 @@
+Channel:
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__',
+'__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__',
+'__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__',
+'__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize',
+'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum',
+'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle',
+'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust',
+'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate',
+'upper', 'zfill']
+
+Sever:
+['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__',
+'__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__',
+'__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_add_channel',
+'_add_member', '_add_role', '_channels', '_default_channel', '_default_role', '_from_data', '_member_count',
+'_members', '_remove_channel', '_remove_member', '_remove_role', '_sync', '_update_voice_state', 'afk_channel',
+'afk_timeout', 'channels', 'created_at', 'default_channel', 'default_role', 'emojis', 'features', 'get_channel',
+'get_member', 'get_member_named', 'icon', 'icon_url', 'id', 'large', 'me', 'member_count', 'members', 'mfa_level',
+'name', 'owner', 'owner_id', 'region', 'role_hierarchy', 'roles', 'splash', 'splash_url', 'unavailable',
+'verification_level', 'voice_client']
+
+Message:
+['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__',
+'__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__',
+'__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__',
+'_clean_content', '_handle_call', '_handle_mentions', '_handle_upgrades', '_raw_channel_mentions', '_raw_mentions',
+'_raw_role_mentions', '_system_content', '_update', 'attachments', 'author', 'call', 'channel', 'channel_mentions',
+'clean_content', 'content', 'edited_timestamp', 'embeds', 'id', 'mention_everyone', 'mentions', 'nonce', 'pinned',
+'raw_channel_mentions', 'raw_mentions', 'raw_role_mentions', 'reactions', 'role_mentions', 'server', 'system_content',
+'timestamp', 'tts', 'type']
+
+Client:
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr__',
+'__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__',
+'__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__',
+'__subclasshook__', '__weakref__', '_closed', '_fill_invite_data', '_get_cache_filename', '_get_cache_token',
+'_is_logged_in', '_is_ready', '_listeners', '_login_1', '_login_2', '_logs_from', '_replace_roles',
+'_resolve_destination', '_resolve_invite', '_run_event', '_syncer', '_update_cache', 'accept_invite', 'add_reaction',
+'add_roles', 'application_info', 'async_event', 'ban', 'cache_auth', 'change_nickname', 'change_presence',
+'change_status', 'clear_reactions', 'close', 'connect', 'connection', 'create_channel', 'create_custom_emoji',
+'create_invite', 'create_role', 'create_server', 'delete_channel', 'delete_channel_permissions', 'delete_custom_emoji',
+'delete_invite', 'delete_message', 'delete_messages', 'delete_role', 'delete_server', 'dispatch', 'edit_channel',
+'edit_channel_permissions', 'edit_custom_emoji', 'edit_message', 'edit_profile', 'edit_role', 'edit_server', 'email',
+'estimate_pruned_members', 'event', 'get_all_channels', 'get_all_emojis', 'get_all_members', 'get_bans', 'get_channel',
+'get_invite', 'get_message', 'get_reaction_users', 'get_server', 'get_user_info', 'group_call_in', 'handle_message',
+'handle_reaction_add', 'handle_ready', 'http', 'invites_from', 'is_closed', 'is_logged_in', 'is_voice_connected',
+'join_voice_channel', 'kick', 'leave_server', 'login', 'logout', 'logs_from', 'loop', 'move_channel', 'move_member',
+'move_role', 'on_error', 'on_message', 'on_ready', 'pin_message', 'pins_from', 'prune_members', 'purge_from',
+'remove_reaction', 'remove_roles', 'replace_roles', 'request_offline_members', 'run', 'send_file', 'send_message',
+'send_typing', 'server_voice_state', 'shard_count', 'shard_id', 'start', 'start_private_message', 'unban',
+'unpin_message', 'voice_client_in', 'wait_for_message', 'wait_for_reaction', 'wait_until_login', 'wait_until_ready',
+'ws']
+
+Role:
+['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__',
+'__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__',
+'__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_update',
+'color', 'colour', 'created_at', 'hoist', 'id', 'is_everyone', 'managed', 'mention', 'mentionable', 'name',
+'permissions', 'position', 'server']
+
+Permissions:
+['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__',
+'__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__lt__', '__module__', '__ne__', '__new__',
+'__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__',
+'_bit', '_perm_iterator', '_set', 'add_reactions', 'administrator', 'all', 'all_channel', 'attach_files', 'ban_members',
+ 'change_nickname', 'connect', 'create_instant_invite', 'deafen_members', 'embed_links', 'external_emojis', 'general',
+ 'handle_overwrite', 'is_strict_subset', 'is_strict_superset', 'is_subset', 'is_superset', 'kick_members',
+ 'manage_channels', 'manage_emojis', 'manage_messages', 'manage_nicknames', 'manage_roles', 'manage_server',
+ 'manage_webhooks', 'mention_everyone', 'move_members', 'mute_members', 'none', 'read_message_history',
+ 'read_messages', 'send_messages', 'send_tts_messages', 'speak', 'text', 'update', 'use_voice_activation',
+ 'value', 'view_audit_logs', 'voice']
+
