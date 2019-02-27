@@ -1,7 +1,7 @@
 import discord
 import datetime
 
-TOKEN = 'NTQ5OTcxNzY1MjAwNDIwODk2.D1dzxA.4JBwpWzUMzz7VyNPr6QFHs2bXss'
+TOKEN = ''
 
 client = discord.Client()
 currentThreads = {}
