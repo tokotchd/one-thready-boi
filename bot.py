@@ -1,7 +1,7 @@
 import discord
 import datetime
 
-TOKEN = ''
+TOKEN = 'NTQ5OTcxNzY1MjAwNDIwODk2.D1dzxA.4JBwpWzUMzz7VyNPr6QFHs2bXss'
 
 client = discord.Client()
 currentThreads = {}
@@ -18,6 +18,7 @@ async def on_message(message):
         if channel.name.startswith('thread'):
             if datetime.datetime.now() - currentThreads[channel] > THREAD_TIMEOUT:
                 await client.delete_channel(channel)
+                del(currentThreads[channel])
 
     #otherwise, we parse the message for commands
     if message.author == client.user:
