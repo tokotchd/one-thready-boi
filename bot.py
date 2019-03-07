@@ -4,7 +4,8 @@ import datetime
 TOKEN = ''
 
 client = discord.Client()
-THREAD_TIMEOUT = datetime.timedelta(hours=12)
+EMPTY_THREAD_TIMEOUT = datetime.timedelta(minutes=10)
+THREAD_TIMEOUT = datetime.timedelta(hours=24)
 THREAD_TIMEOUT_CHECK = datetime.timedelta(minutes=1)
 currentThreads = {}
 
@@ -27,7 +28,9 @@ async def on_message(message):
                 lastMessage = None
                 async for message in messages:
                     lastMessage = message
-                if datetime.datetime.utcnow() - message.timestamp > THREAD_TIMEOUT:
+                if datetime.datetime.utcnow() - message.timestamp > EMPTY_THREAD_TIMEOUT and lastMessage.author == client.user
+                    await client.delete_channel(channel)
+                elif datetime.datetime.utcnow() - message.timestamp > THREAD_TIMEOUT:
                     await client.delete_channel(channel)
         lastPurgeCheck = datetime.datetime.utcnow()
 
