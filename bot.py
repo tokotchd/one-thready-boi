@@ -28,7 +28,7 @@ async def on_message(message):
                 lastMessage = None
                 async for message in messages:
                     lastMessage = message
-                if datetime.datetime.utcnow() - message.timestamp > EMPTY_THREAD_TIMEOUT and lastMessage.author == client.user
+                if datetime.datetime.utcnow() - message.timestamp > EMPTY_THREAD_TIMEOUT and lastMessage.author == client.user:
                     await client.delete_channel(channel)
                 elif datetime.datetime.utcnow() - message.timestamp > THREAD_TIMEOUT:
                     await client.delete_channel(channel)
