@@ -1,11 +1,11 @@
 import discord
 import datetime
 
-TOKEN = ''
+TOKEN = 'NTQ5OTcxNzY1MjAwNDIwODk2.D1dzxA.4JBwpWzUMzz7VyNPr6QFHs2bXss'
 
 client = discord.Client()
-THREAD_TIMEOUT = datetime.timedelta(seconds=10)
-THREAD_TIMEOUT_CHECK = datetime.timedelta(hours=24)
+THREAD_TIMEOUT = datetime.timedelta(hours=12)
+THREAD_TIMEOUT_CHECK = datetime.timedelta(minutes=1)
 currentThreads = {}
 
 lastPurgeCheck = datetime.datetime.utcnow()
